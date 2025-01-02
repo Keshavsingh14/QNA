@@ -1,0 +1,132 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.App.fullscreen {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.App h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.editor-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.editor-container {
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #363636;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+select:hover {
+  background-color: #404040;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: white;
+}
+
+.run-button {
+  background-color: #28a745;
+}
+
+.run-button:hover {
+  background-color: #218838;
+}
+
+.run-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.save-button {
+  background-color: #0066cc;
+}
+
+.save-button:hover {
+  background-color: #0052a3;
+}
+
+.output-container {
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.output-container h3 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.output {
+  background-color: #252525;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #fff;
+  font-family: monospace;
+  white-space: pre-wrap;
+  min-height: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.editor-font-fira-code .cm-content {
+  font-family: 'Fira Code', monospace;
+}
+
+.editor-font-jetbrains-mono .cm-content {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.editor-font-source-code-pro .cm-content {
+  font-family: 'Source Code Pro', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}

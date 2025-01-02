@@ -1,0 +1,14 @@
+{
+  "name": "online-code-editor",
+  "version": "1.0.0",
+  "description": "MERN stack online code editor",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
+    "install-deps": "cd backend && npm install && cd ../frontend && npm install",
+    "test": "cd backend && npm test && cd ../frontend && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
+
